@@ -1,0 +1,759 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+
+
+/* couleur */
+/* blanc: #edf0f1 */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    zoom: 98% !important;
+}
+
+html {
+  /* pour le smooth scroll... */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    /* TEST */
+    /*display: flex;
+    flex-direction: column;*/
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(146, 140, 140);
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(219, 213, 213);
+  /*background: rgb(243, 239, 239);*/
+}
+
+
+.planete {
+  color: #edf0f1;
+  width: auto;
+  height: 600px;
+  background-image: url(images/Space-exploration.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+/*    display: block;*/
+  /*background-position-x: right;*/
+  /*zoom: 125%;*/
+
+  /*text-align: center;*/
+  /*vertical-align: middle;*/
+  /*  background-attachment: fixed;*/
+       
+}
+
+#main-text {
+  /*font-size: 175%;*/
+ font-size: 2.2em;
+  padding-bottom: 15px;
+  /*
+  text-align: center;
+  vertical-align: middle;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;*/
+}
+
+#deuxieme-text {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+/*
+.second {
+  padding-top: 400px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 55px;
+  font-weight: 600;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+/*
+.troisieme {
+  margin-right: 35%;
+  font-weight: 500;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: right;
+   /* width: 75%;*/
+/*
+}*/
+/*
+p {
+    margin: initial;
+}*/
+/* z-index = priorité ? */ 
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: rgb(41, 39, 39);
+ /* background-color: #24252a;*/
+}
+
+.nav_links a,
+.nav-left, .nav-1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+  /* alignement */
+.nav_links {
+  list-style: none;
+  display: flex;
+}
+  /* padding */
+.nav_links li {
+  padding: 0px 20px;
+}
+  /* petite anim color */
+.nav_links li a {
+  transition: color 0.3s ease 0s;
+}
+  /* anime quand la souris passe dessus */
+.nav_links li a:hover {
+  color: #f19c1c;
+   /* color: #0088a9;*/
+}
+  
+.nav-left {
+  padding: 9px 25px;
+  background: #f19c1c;
+    /*background-color: rgba(0, 136, 169, 1);*/
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+}
+  /* anime quand souris passe dessus*/ 
+.nav-left:hover {
+  background-color: rgba(243, 159, 33, 0.8);
+}
+  
+
+
+/* systeme solaire */
+
+
+.titre-sys {
+  color: black;
+  font-size: 3em;
+  text-align: center;
+  height: 100px;
+}
+
+.sys-sol {
+  text-align: center;
+  background: rgb(243, 239, 239);
+}
+
+.sys-img {
+  margin: 6%;
+  margin-right: 6%;
+  max-width: 90%;
+  min-width: 10%;
+}
+
+.nav-sys {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.nav-sys .nav-2 {
+  margin: 15px;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-2::after {
+  content: '';
+  height: 2px;
+  width: 0%;
+  background: black;
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-2:hover::after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  background: #f19c1c;
+  display: flex;
+}
+
+.nav-2:hover {
+  color: #f19c1c;
+}
+
+
+div.histoire1 {
+  display: flex;
+  padding-left: 3%;
+  padding-right: 3%;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  background: rgb(41, 39, 39);
+  padding-top: 120px;
+  padding-bottom: 100px;
+  /*padding-left: 80%;*/
+  
+}
+
+div.histoire2 {
+  display: flex;
+  padding-left: 3%;
+  padding-right: 3%;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  background: rgb(243, 239, 239);
+ /* background: rgb(41, 39, 39);*/
+  padding-top: 120px;
+  padding-bottom: 100px;
+  /*padding-left: 100px;*/
+}
+
+
+.carte {
+  position: relative;
+  width: 320px;
+  height: 420px;
+  background: #122936;
+  border-radius: 20px;
+  overflow: hidden;
+  opacity: 1;
+}
+
+
+.carte::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #f19c1c;
+  /*background: #2196f3;*/
+  /* transforme l'angle du carré */
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+
+.carte:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+
+.carte::after {
+  content: "";
+  position: absolute;
+  /*mettre en bas*/
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0,0,0,0.2);
+}
+
+
+
+/* carte after pour chaque planete*/
+
+.carteMercure::after {
+  content: "Mercure";
+  position: absolute;
+  /*mettre en bas*/
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0,0,0,0.2);
+}
+
+.carteVenus::after {
+  content: "Venus";
+  position: absolute;
+  /*mettre en bas*/
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0,0,0,0.2);
+}
+
+.carteTerre::after {
+  content: "Terre";
+  position: absolute;
+  /*mettre en bas*/
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 7em;
+  color: rgba(0,0,0,0.2);
+}
+
+.carteMars::after {
+  content: "Mars";
+  position: absolute;
+  /*mettre en bas*/
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 7em;
+  color: rgba(0,0,0,0.2);
+}
+
+.carteJupiter::after {
+  content: "Jupiter";
+  position: absolute;
+  /*mettre en bas*/
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 7em;
+  color: rgba(0,0,0,0.2);
+}
+
+.carteSaturne::after {
+  content: "Saturne";
+  position: absolute;
+  /*mettre en bas*/
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0,0,0,0.2);
+}
+
+.carteUranus::after {
+  content: "Uranus";
+  position: absolute;
+  /*mettre en bas*/
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0,0,0,0.2);
+}
+
+.carteNeptune::after {
+  content: "Neptune";
+  position: absolute;
+  /*mettre en bas*/
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0,0,0,0.2);
+}
+
+
+
+
+.carte .imageTerre {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+.carte .imageTerre img {
+  max-width: 100%;
+  transition: 0.5s;
+}
+
+.carte:hover .imageTerre img {
+  max-width: 75%;
+}
+
+.carte .contenuTerre {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.carte .contenuTerre h3 {
+  font-size: 45px;
+  color: #edf0f1;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+
+/* peu etre utile pour le opacity anim 
+
+*/
+
+
+.carte .contenuTerre .infoTerre {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #edf0f1;
+  text-decoration: none;
+  /*background: #2196f3;*/
+  background: #f39f21;
+  border-radius: 30px;
+ /* text-transform: uppercase;*/
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+/*
+.infoTerre:hover {
+  background: rgba(241, 156, 28, 0.8) !important;
+}*/
+
+.carte:hover .contenuTerre .infoTerre {
+  top: 0;
+  opacity: 1;
+}
+
+
+/* animation 1*/
+/*
+.texte-test {
+  transition: 0.5s ease;
+  z-index: 2;
+  opacity: 1;
+}
+
+.only-text:hover .texte-test {
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.only-text:hover .infoSup {
+  transition: 0.5s ease;
+  opacity: 1;
+}
+
+.infoSup {
+  z-index: 3;
+  opacity: 0;
+  transform: translateY(-100%);
+  position: absolute;
+  width: 500px;
+  height: 250px;
+  transition: 0.2s ease;
+}*/
+
+.texteP:hover .infoSup {
+  transition: 0.5s ease;
+  opacity: 1;
+  position: absolute;
+  transform: translateY(30px);
+  transition-delay: 0.5s;
+}
+
+.infoSup {
+  transition-delay: 0.5s;
+  z-index: 3;
+  opacity: 0;
+ /* width: 500px;
+  height: 250px;*/
+  transition: 0.5s ease;
+  position: absolute;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #edf0f1;
+  text-decoration: none;
+  /*background: #2196f3;*/
+  background: #f39f21;
+  border-radius: 30px;
+ /* text-transform: uppercase;*/
+  letter-spacing: 1px;
+  transform: translateY(-100px);
+}
+
+
+.texteP {
+  color: #edf0f1;
+  text-justify: auto;
+ /* text-align: right;*/
+  padding-left: 15%;
+  padding-right: 15%;
+  width: 75%;
+  font-size: 30px;
+  z-index: 10;
+  transition: 0.5s all ease;
+}
+
+.histoire2 .texteP {
+  color: black;
+  text-justify: auto;
+ /* text-align: right;*/
+  padding-left: 15%;
+  padding-right: 15%;
+  width: 75%;
+  font-size: 30px;
+}
+ 
+
+div .num {
+  position: absolute;
+  /*top: -50px;*/
+  left: 22%;
+  z-index: 9;
+  width: 500px;
+  height: 200px;
+ /* overflow: hidden;*/
+  opacity: 0.1;
+}
+
+
+div .num2 {
+  position: absolute;
+  /*top: -50px;*/
+  left: 22%;
+  z-index: 9;
+  width: 900px;
+  height: 200px;
+ /* overflow: hidden;*/
+  opacity: 0.1;
+}
+
+
+.num h4 {
+  color: #edf0f1 !important;
+  font-size: 200px;
+  transform: translate(275px, -50px);
+  width: 270px;
+}
+
+
+.num2 h4 {
+  color: black !important;
+  font-size: 200px;
+  transform: translate(700px, -50px);
+  width: 270px;
+}
+
+
+
+.foot {
+  padding: 2%;
+  text-align: center;
+  justify-content: center;
+  background: rgb(41, 39, 39);
+  color: rgb(90, 81, 81);
+}
+
+@media (min-width: 1450px) {
+  .texteP {
+    font-size: 28px;
+  }
+
+  .histoire2 .texteP {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .texteP {
+    font-size: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .histoire2 .texteP {
+    font-size: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .num h4 {
+    color: #edf0f1;
+    font-size: 200px;
+    transform: translate(100px, -50px);
+    width: 270px;
+  }
+
+  .num2 h4 {
+    color: black;
+    font-size: 200px;
+    transform: translate(380px, -50px);
+    width: 270px;
+  }
+
+  div .num2 {
+    width: 800px;
+  }
+
+}
+
+@media (max-width: 1150px) {
+  .texteP {
+    font-size: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .histoire2 .texteP {
+    font-size: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+  }
+  .num h4 {
+    color: #edf0f1;
+    font-size: 200px;
+    transform: translate(75px, -50px);
+    width: 270px;
+  }
+
+  .num2 h4 {
+    color: black;
+    font-size: 200px;
+    transform: translate(300px, -50px);
+    width: 270px;
+  }
+
+}
+
+
+
+@media (max-width: 1225px) {
+  .num2 h4 {
+    color: black;
+    font-size: 200px;
+    transform: translate(280px, -50px);
+    width: 270px;
+  }
+}
+
+@media (max-width: 1090px) {
+  .num2 h4 {
+    color: black;
+    font-size: 200px;
+    transform: translate(200px, -50px);
+    width: 270px;
+  }
+}
+
+@media (max-width: 970px) {
+  .texteP {
+    font-size: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .histoire2 .texteP {
+    font-size: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .num h4 {
+    color: #edf0f1;
+    font-size: 200px;
+    transform: translate(100px, -50px);
+    width: 270px;
+  }
+  
+  .num2 h4 {
+    color: black;
+    font-size: 200px;
+    transform: translate(120px, -50px);
+    width: 270px;
+  }
+
+  div .num2 {
+    width: 400px;
+  }
+
+  .nav-sys {
+    font-size: 25px;
+  }
+
+}
+
+@media (max-width: 840px) {
+  .num2 h4 {
+    color: black;
+    font-size: 200px;
+    transform: translate(50px, -50px);
+    width: 270px;
+  }
+
+  .nav-sys {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  div .num2 {
+    width: 300px;
+  }
+}
+
+
+@media (max-width: 740px) {
+  div .num {
+    opacity: 0;
+  }
+
+  div .num2 {
+    opacity: 0;
+  }
+
+  div .num2 {
+    width: 0px;
+  }
+
+  .nav-sys {
+    font-size: 15px;
+    font-weight: 550;
+  }
+}
+
