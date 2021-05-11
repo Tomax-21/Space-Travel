@@ -13,7 +13,6 @@
 }
 
 html {
-  /* pour le smooth scroll... */
     scroll-behavior: smooth;
 }
 
@@ -22,9 +21,6 @@ body {
     margin: 0;
     padding: 0;
     justify-content: space-between;
-    /* TEST */
-    /*display: flex;
-    flex-direction: column;*/
 }
 
 ::-webkit-scrollbar {
@@ -37,7 +33,6 @@ body {
 
 ::-webkit-scrollbar-track {
   background: rgb(219, 213, 213);
-  /*background: rgb(243, 239, 239);*/
 }
 
 
@@ -52,29 +47,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
-
-/*    display: block;*/
-  /*background-position-x: right;*/
-  /*zoom: 125%;*/
-
-  /*text-align: center;*/
-  /*vertical-align: middle;*/
-  /*  background-attachment: fixed;*/
-       
+  align-items: center;      
 }
 
 #main-text {
-  /*font-size: 175%;*/
  font-size: 2.2em;
   padding-bottom: 15px;
-  /*
-  text-align: center;
-  vertical-align: middle;
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
-  text-align: center;*/
 }
 
 #deuxieme-text {
@@ -82,39 +60,12 @@ body {
   font-weight: 400;
 }
 
-/*
-.second {
-  padding-top: 400px;
-  vertical-align: middle;
-  text-align: center;
-  font-size: 55px;
-  font-weight: 600;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-}
-/*
-.troisieme {
-  margin-right: 35%;
-  font-weight: 500;
-  font-family: sans-serif;
-  font-size: 20px;
-  text-align: right;
-   /* width: 75%;*/
-/*
-}*/
-/*
-p {
-    margin: initial;
-}*/
-/* z-index = priorité ? */ 
-
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
   background-color: rgb(41, 39, 39);
- /* background-color: #24252a;*/
 }
 
 .nav_links a,
@@ -126,12 +77,11 @@ header {
   text-decoration: none;
 }
 
-  /* alignement */
 .nav_links {
   list-style: none;
   display: flex;
 }
-  /* padding */
+
 .nav_links li {
   padding: 0px 20px;
 }
@@ -139,30 +89,24 @@ header {
 .nav_links li a {
   transition: color 0.3s ease 0s;
 }
-  /* anime quand la souris passe dessus */
+
 .nav_links li a:hover {
   color: #f19c1c;
-   /* color: #0088a9;*/
 }
   
 .nav-left {
   padding: 9px 25px;
   background: #f19c1c;
-    /*background-color: rgba(0, 136, 169, 1);*/
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.3s ease 0s;
 }
-  /* anime quand souris passe dessus*/ 
+
 .nav-left:hover {
   background-color: rgba(243, 159, 33, 0.8);
 }
   
-
-
-/* systeme solaire */
-
 
 .titre-sys {
   color: black;
@@ -232,7 +176,6 @@ div.histoire1 {
   background: rgb(41, 39, 39);
   padding-top: 120px;
   padding-bottom: 100px;
-  /*padding-left: 80%;*/
   
 }
 
@@ -244,10 +187,8 @@ div.histoire2 {
   align-items: center;
   min-height: 70vh;
   background: rgb(243, 239, 239);
- /* background: rgb(41, 39, 39);*/
   padding-top: 120px;
   padding-bottom: 100px;
-  /*padding-left: 100px;*/
 }
 
 
@@ -295,12 +236,9 @@ div.histoire2 {
 
 
 
-/* carte after pour chaque planete*/
-
 .carteMercure::after {
   content: "Mercure";
   position: absolute;
-  /*mettre en bas*/
   bottom: 0;
   left: 0;
   font-weight: 600;
@@ -322,7 +260,6 @@ div.histoire2 {
 .carteTerre::after {
   content: "Terre";
   position: absolute;
-  /*mettre en bas*/
   bottom: 0;
   left: 0;
   font-weight: 600;
@@ -344,7 +281,6 @@ div.histoire2 {
 .carteJupiter::after {
   content: "Jupiter";
   position: absolute;
-  /*mettre en bas*/
   bottom: 0;
   left: 0;
   font-weight: 600;
@@ -366,7 +302,6 @@ div.histoire2 {
 .carteUranus::after {
   content: "Uranus";
   position: absolute;
-  /*mettre en bas*/
   bottom: 0;
   left: 0;
   font-weight: 600;
@@ -384,8 +319,6 @@ div.histoire2 {
   font-size: 6em;
   color: rgba(0,0,0,0.2);
 }
-
-
 
 
 .carte .imageTerre {
@@ -427,11 +360,6 @@ div.histoire2 {
 
 
 
-/* peu etre utile pour le opacity anim 
-
-*/
-
-
 .carte .contenuTerre .infoTerre {
   position: relative;
   top: 100px;
@@ -447,44 +375,12 @@ div.histoire2 {
   letter-spacing: 1px;
   transition: 0.5s;
 }
-/*
-.infoTerre:hover {
-  background: rgba(241, 156, 28, 0.8) !important;
-}*/
 
 .carte:hover .contenuTerre .infoTerre {
   top: 0;
   opacity: 1;
 }
 
-
-/* animation 1*/
-/*
-.texte-test {
-  transition: 0.5s ease;
-  z-index: 2;
-  opacity: 1;
-}
-
-.only-text:hover .texte-test {
-  transition: 0.3s;
-  opacity: 0;
-}
-
-.only-text:hover .infoSup {
-  transition: 0.5s ease;
-  opacity: 1;
-}
-
-.infoSup {
-  z-index: 3;
-  opacity: 0;
-  transform: translateY(-100%);
-  position: absolute;
-  width: 500px;
-  height: 250px;
-  transition: 0.2s ease;
-}*/
 
 .texteP:hover .infoSup {
   transition: 0.5s ease;
@@ -498,8 +394,6 @@ div.histoire2 {
   transition-delay: 0.5s;
   z-index: 3;
   opacity: 0;
- /* width: 500px;
-  height: 250px;*/
   transition: 0.5s ease;
   position: absolute;
   opacity: 0;
@@ -507,10 +401,8 @@ div.histoire2 {
   margin-top: 15px;
   color: #edf0f1;
   text-decoration: none;
-  /*background: #2196f3;*/
   background: #f39f21;
   border-radius: 30px;
- /* text-transform: uppercase;*/
   letter-spacing: 1px;
   transform: translateY(-100px);
 }
@@ -519,7 +411,6 @@ div.histoire2 {
 .texteP {
   color: #edf0f1;
   text-justify: auto;
- /* text-align: right;*/
   padding-left: 15%;
   padding-right: 15%;
   width: 75%;
@@ -531,7 +422,6 @@ div.histoire2 {
 .histoire2 .texteP {
   color: black;
   text-justify: auto;
- /* text-align: right;*/
   padding-left: 15%;
   padding-right: 15%;
   width: 75%;
@@ -541,24 +431,20 @@ div.histoire2 {
 
 div .num {
   position: absolute;
-  /*top: -50px;*/
   left: 22%;
   z-index: 9;
   width: 500px;
   height: 200px;
- /* overflow: hidden;*/
   opacity: 0.1;
 }
 
 
 div .num2 {
   position: absolute;
-  /*top: -50px;*/
   left: 22%;
   z-index: 9;
   width: 900px;
   height: 200px;
- /* overflow: hidden;*/
   opacity: 0.1;
 }
 
